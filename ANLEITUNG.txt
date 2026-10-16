@@ -1,0 +1,24 @@
+GOALS APP – NETLIFY CLOUD
+
+WICHTIG: Anders als die erste Version benötigt diese Version einen Netlify-Build
+(inklusive Functions). Ein reiner manueller Netlify-Drop ohne Build ist dafür nicht geeignet.
+
+1. Lade den Ordner in ein privates GitHub-Repository hoch.
+2. In Netlify: Add new project > Import an existing project > GitHub.
+3. Das Repository auswählen. Build command: npm install; Publish directory: .
+4. In Netlify unter Project configuration > Environment variables
+   die Variable GOALS_PIN mit dem gewünschten PIN setzen (z. B. 0815).
+   Scope: Functions (oder alle Scopes). Nach dem Setzen erneut deployen.
+5. Website öffnen und PIN eingeben.
+
+Beim ersten Anmelden werden vorhandene lokale Daten auf diesem Gerät automatisch
+in die Cloud übertragen, sofern noch keine Cloud-Daten vorhanden sind.
+Danach gilt der Cloud-Datenstand. Vorher Backup exportieren ist empfehlenswert.
+
+HINWEISE:
+- 0815 ist als öffentlich erreichbarer PIN unsicher. Bitte einen längeren,
+  einzigartigen Code als GOALS_PIN setzen.
+- Kein automatischer Konfliktabgleich: nicht gleichzeitig auf zwei Geräten bearbeiten.
+- Die App ist online-first. Ohne Verbindung lassen sich Änderungen lokal speichern,
+  müssen aber bei späteren Sitzungen ggf. manuell per Backup übertragen werden.
+- Nicht für vertrauliche Geschäfts- oder personenbezogene Daten geeignet.
